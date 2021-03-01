@@ -1,0 +1,116 @@
+
+.main-contacts-wrap {
+    display: flex;
+  justify-content: space-around;
+}
+.main-contacts {
+    padding-top: 3rem;
+  text-align: center;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+   text-shadow: 2px 2px 2px grey;
+}
+
+.main-contacts-soc {
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    list-style-type: none;
+}
+
+.main-contacts-soc-item {
+    margin-top: 2rem;
+}
+
+.main-contacts-form {
+    padding-top: 2rem;
+    margin-left: 2rem;
+    text-shadow: 1px 3px 3px grey;
+
+
+}
+
+.main-contacts-form ul {
+    width:600px;
+    list-style-type:none;
+    list-style-position:outside;
+    border: rgba(0, 0, 0, 0.5) 1px solid;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    margin:0px;
+    padding:0rem;
+    background-image: url("../images/2.jpg") ;
+
+
+
+}
+
+.main-contacts-form li {
+    list-style-type: none;
+    position: relative;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.main-contacts-form label {
+    width:150px;
+    margin-top: 3px;
+    display:inline-block;
+    float:left;
+    padding:3px;
+}
+.main-contacts-form input {
+    height:20px;
+    width:220px;
+    padding:5px 8px;
+}
+.main-contacts-form textarea {padding:8px; width:300px;}
+.main-contacts-form button {margin-left:156px;margin-bottom: 0.5rem}
+
+
+
+
+.main-contacts-clock {
+    width: 99%;
+    font-size: 60px;
+    text-align: center;
+    color: black;
+}
+
+.main-contacts-clock ul {
+    list-style-type: none;
+    margin: 4rem auto;
+}
+
+.main-contacts-clock  ul li {
+    display: inline;
+}
+.main-contacts-clock  ul li#separator {
+    -moz-animation: myfade 1s ease infinite;
+    -webkit-animation: myfade 1s ease infinite;
+}
+
+/* Animation */
+@-webkit-keyframes myfade {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@-moz-keyframes myfade {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
