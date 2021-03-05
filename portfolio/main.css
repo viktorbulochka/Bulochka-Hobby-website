@@ -1,0 +1,126 @@
+@media screen and (min-width: 911px) {
+    .ant-carousel {
+        max-width: 1000px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 910px) {
+    .ant-carousel {
+        max-width: 540px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .ant-carousel {
+        max-width: 270px;
+    }
+}
+
+.header {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.header-large {
+    text-align: center;
+    padding-top: 2rem;
+    letter-spacing: 0.5rem;
+    font-size: 2.5rem;
+}
+
+
+.ant-carousel {
+    margin: 50px auto auto;
+    padding-top: 2rem;
+    padding-right: 1.3rem;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    background:url("../images/2.jpg")
+}
+
+.ant-carousel-element {
+    width: 340px;
+    text-align: center;
+}
+
+/* General styles */
+.ant-carousel {
+    width: auto;
+    position: relative;
+}
+
+.ant-carousel-hider {
+    overflow: hidden;
+}
+
+.ant-carousel-list {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.ant-carousel-element {
+    display: block;
+    flex: 0 0 auto;
+}
+
+/* Navigation item styles */
+div.ant-carousel-arrow-left,
+div.ant-carousel-arrow-right {
+    width: 22px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.6;
+    z-index: 32;
+}
+
+div.ant-carousel-arrow-left {
+    left: -40px;
+    top: 40%;
+    display: block;
+    background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-left.png") no-repeat;
+}
+
+div.ant-carousel-arrow-right {
+    right: -40px;
+    top: 40%;
+    display: block;
+    background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-right.png") no-repeat;
+}
+
+div.ant-carousel-arrow-left:hover {
+    opacity: 1.0;
+}
+
+div.ant-carousel-arrow-right:hover {
+    opacity: 1.0;
+}
+
+div.ant-carousel-dots {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+    z-index: 30;
+    text-align: center;
+}
+
+span.ant-dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    padding: 0;
+    display: inline-block;
+    background-color: #BBB;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.divider {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
