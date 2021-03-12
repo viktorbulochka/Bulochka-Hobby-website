@@ -1,4 +1,3 @@
-
 function Ant(crslId) {
 
     let id = document.getElementById(crslId);
@@ -25,9 +24,9 @@ function Ant(crslId) {
 Ant.defaults = {
 
     // Default options for the carousel
-    elemVisible: 2, // Кол-во отображаемых элементов в карусели
+    elemVisible: 3, // Кол-во отображаемых элементов в карусели
     loop: true,     // Бесконечное зацикливание карусели
-    auto: false,     // Автоматическая прокрутка
+    auto: true,     // Автоматическая прокрутка
     interval: 5000, // Интервал между прокруткой элементов (мс)
     speed: 750,     // Скорость анимации (мс)
     touch: true,    // Прокрутка  прикосновением
@@ -229,5 +228,5 @@ Ant.initialize = function(that) {
         }
     }
 };
-new Ant();
 
+new Ant();

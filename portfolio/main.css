@@ -1,44 +1,60 @@
+/* User styles */
 @media screen and (min-width: 911px) {
     .ant-carousel {
-        max-width: 1000px;
+        max-width: 900px;
     }
 }
 
 @media screen and (min-width: 641px) and (max-width: 910px) {
     .ant-carousel {
-        max-width: 540px;
+        max-width: 600px;
     }
 }
 
 @media screen and (max-width: 640px) {
     .ant-carousel {
-        max-width: 270px;
+        max-width: 300px;
     }
 }
 
-.header {
+.portfolio_header {
+    padding-top: 3rem;
     text-align: center;
-    padding-top: 2rem;
+    letter-spacing: 0.3rem;
+    font-size: 2.5rem;
 }
 
-.header-large {
+.wrp {
     text-align: center;
-    padding-top: 2rem;
-    letter-spacing: 0.5rem;
-    font-size: 2.5rem;
+}
+
+.portfolio_smallHeader {
+    display: inline-block;
+    padding: 0.5rem 5rem;
+    font-weight: bold;
+    background:rgba(233, 241, 248, 0.8);
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    border-radius:1rem;
+    text-shadow: 1px 2px 2px grey;
+    border: 1px black solid;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.5), 0 10px 10px rgba(0,0,0,0.3);
 }
 
 
 .ant-carousel {
-    margin: 50px auto auto;
-    padding-top: 2rem;
-    padding-right: 1.3rem;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    background:url("../images/2.jpg")
+    margin: 2rem auto 6rem auto;
+    padding-top: 1rem;
+    border: 1px solid #ccd;
+    background-color: rgba(233, 241, 248, 0.8);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.5), 0 10px 10px rgba(0,0,0,0.3);
+
+
+
 }
 
 .ant-carousel-element {
-    width: 340px;
+    width: 300px;
     text-align: center;
 }
 
@@ -104,9 +120,10 @@ div.ant-carousel-dots {
     height: auto;
     position: absolute;
     left: 0;
-    bottom: -50px;
+    bottom: -3rem;
     z-index: 30;
     text-align: center;
+
 }
 
 span.ant-dot {
@@ -118,9 +135,4 @@ span.ant-dot {
     background-color: #BBB;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.divider {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
 }
