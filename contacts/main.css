@@ -1,36 +1,113 @@
+@media only screen and (max-width: 480px) {
+
+    .main_contacts {
+        flex-direction: column;
+    }
+
+    .main_contacts_header {
+        padding-top: 4vh;
+    }
+
+    ul.main_contacts_card {
+        margin: 0 auto 5vh;
+        width: 90vw;
+    }
+
+
+    form.main_contacts_form {
+        width: 90vw;
+        margin: 0 auto 5vh;
+    }
+
+    .main_contacts_form_list_textarea {
+        max-width: 250px;
+    }
+
+    .header_brand_link_text {
+        display: none;
+    }
+
+    .header_brand_link_pic {
+        margin-left: -1.7rem;
+    }
+
+    .header_nav_item {
+        margin-right: -0.85rem;
+    }
+
+    .main_contacts_form_list_item_button {
+        margin-left: 0;
+    }
+
+}
 
 .main_contacts {
     display: flex;
-  justify-content: space-around;
+    justify-content: space-around;
 }
+
 .main_contacts_header {
-    padding-top: 3rem;
-  text-align: center;
+    text-align: center;
     font-size: 2.5rem;
     letter-spacing: 0.5rem;
-   text-shadow: 2px 2px 2px grey;
+    text-shadow: 2px 2px 2px grey;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+
+}
+
+
+.main_contacts_header:hover {
+    color: rgba(250, 248, 248, 0.8);
+    webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+
 }
 
 .main_contacts_card {
-    padding-top: 2rem;
-    font-size: 1.5rem;
-    list-style-type: none;
+    width: 35vw;
+    padding: 1.5rem;
     background: rgba(189, 204, 212, 0.8);
-    box-shadow: 0 14px 28px rgba(0,0,0,0.5), 0 10px 10px rgba(0,0,0,0.5);
-    padding-right: 2rem;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.5), 0 10px 10px rgba(0, 0, 0, 0.5);
     border-radius: 1rem;
     border: 1px black solid;
     text-shadow: 1px 2px 2px grey;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
-.main_contacts_card_item:last-child{
-padding-bottom: 1rem;
+
+.main_contacts_card_item {
+    list-style-type: none;
+    font-size: 1.5rem;
+
+
 }
 
 .main_contacts_card_pic {
     width: 50px;
 }
+
+.main_contacts_card_pic:hover {
+    transform: scaleY(1.2) scalex(1.2);
+
+}
+
+.main_contacts_card_item:hover {
+    color: rgba(250, 248, 248, 0.8);
+    webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+
+
+}
+
 
 hr {
     margin: 20px 0;
@@ -42,26 +119,36 @@ hr {
 }
 
 .main_contacts_form {
-    padding-top: 2rem;
-    margin-left: 2rem;
     text-shadow: 1px 2px 2px grey;
+    width: 45vw;
 }
 
 .main_contacts_form_list_item_header {
     text-align: center;
     letter-spacing: 0.3rem;
+
+}
+
+.main_contacts_form_list_item_header:hover {
+    color: rgba(250, 248, 248, 0.8);
+    webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+
 }
 
 .main_contacts_form_list {
-    width:600px;
-    list-style-type:none;
-    list-style-position:outside;
+    list-style-type: none;
+    list-style-position: outside;
     border-radius: 1rem;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.5), 0 10px 10px rgba(0,0,0,0.5);
-    margin:0;
-    padding:0;
-    background: rgba(189, 204, 212, 0.8);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.5), 0 10px 10px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding: 0;
+    background: rgba(189, 204, 212, 0.9);
     border: 1px black solid;
+
 }
 
 .main_contacts_form_list_item {
@@ -72,31 +159,44 @@ hr {
     margin-left: 1rem;
     font-weight: bold;
     letter-spacing: 1px;
+
 }
 
 .main_contacts_form_list_item_label {
-    width:150px;
-    display:inline-block;
-    float:left;
-    padding-left:3px;
+    width: 150px;
+    display: inline-block;
+    float: left;
+    padding-left: 3px;
 
 }
+
+.main_contacts_form_list_item_label:hover {
+    color: rgba(250, 248, 248, 0.8);
+    webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+
+}
+
 .main_contacts_form_list_item_input {
-    height:25px;
-    width:220px;
-    padding:5px 8px;
+    height: 25px;
+    width: 220px;
+    padding: 5px 8px;
     border-radius: 0.3rem;
     background: whitesmoke;
 
 }
+
 .main_contacts_form_list_textarea {
-    width:300px;
+    width: 270px;
     border-radius: 0.5rem;
     background: whitesmoke;
 }
 
 .main_contacts_form_list_item_button {
-    margin-left:156px;
+    margin-left: 140px;
     margin-bottom: 0.5rem;
     letter-spacing: 2px;
     border-radius: 0.5rem;
@@ -108,5 +208,74 @@ hr {
 }
 
 
+/* Стили для подложки */
+
+.overlay {
+
+    /* Скрываем подложку  */
+    opacity: 0;
+    visibility: hidden;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+}
+
+
+/* Стили для модальных окон */
+
+.modal {
+    opacity: 0;
+    visibility: hidden;
+
+
+    width: 100%;
+    max-width: 500px;
+
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 30px;
+    border-radius: 3px;
+    background-color: rgb(221, 237, 245);
+    transition: 0.3s all;
+}
+
+
+/* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Стили для кнопки закрытия */
+
+.modal__cross {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    fill: #444;
+    cursor: pointer;
+}
+
+
+/* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
 
 

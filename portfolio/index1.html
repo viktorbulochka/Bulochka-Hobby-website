@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Мои работы</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../portfolio/main.css">
+    <link rel="stylesheet" type="text/css" href="../shared.css">
+    <link rel="stylesheet" type="text/css" href="../slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="../slick-1.8.1/slick/slick-theme.css">
+</head>
+
+
+<body>
+<header class="header">
+    <div class="header_brand">
+        <a href="../index.html" class="header_brand_link">
+            <img class="header_brand_link_pic" src=../images/svg/yarn-ball.svg alt="Logo">
+            <span class="header_brand_link_text">Olga Aferova</span>
+        </a>
+    </div>
+    <nav class="header_nav">
+        <ul class="header_nav_items">
+            <li class="header_nav_item">
+                <a class="header_nav_item_link" href="../portfolio/index.html">Мои работы</a>
+            </li>
+            <li class="header_nav_item">
+                <a class="header_nav_item_link" href="../ordering/index.html">На заказ</a>
+            </li>
+            <li class="header_nav_item">
+                <a class="header_nav_item_link" href="../contacts/index.html">Контакты</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="wrapper" style="height:100vh">
+        <div class="carousel" style="width: 200px;margin: 0 auto">
+            <div><img height="200px" src="../images/postcard.JPG"></div>
+            <div><img height="200px" src="../images/postcard.JPG"></div>
+            <div><img height="200px" src="../images/postcard.JPG"></div>
+            <div><img height="200px" src="../images/postcard.JPG"></div>
+            <div><img height="200px" src="../images/postcard.JPG"></div>
+        </div>
+        <div class="carousel" style="width: 200px;margin: 0 auto">
+            <div><img height="200px" src="../images/postcard.JPG"></div>
+            <div><img height="200px" src="../images/postcard.JPG"></div>
+            <div><img height="200px" src="../images/postcard.JPG"></div>
+            <div><img height="200px" src="../images/postcard.JPG"></div>
+            <div><img height="200px" src="../images/postcard.JPG"></div>
+        </div>
+        <div class="carousel" style="width: 200px;margin: 0 auto">
+            <div><img height="200px" src="../images/postcard.JPG"></div>
+            <div><img height="200px" src="../images/postcard.JPG"></div>
+            <div><img height="200px" src="../images/postcard.JPG"></div>
+            <div><img height="200px" src="../images/postcard.JPG"></div>
+            <div><img height="200px" src="../images/postcard.JPG"></div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer_links">
+        <a class="footer_link" href="#">
+            <img class="footer_link_pic" src="../images/svg/instagram.svg" alt="Instagram">
+        </a>
+
+        <a class="footer_link" href="#">
+            <img class="footer_link_pic" src="../images/svg/vk.svg" alt="Vk">
+        </a>
+
+        <a class="footer_link" href="#">
+            <img class="footer_link_pic" src="../images/svg/viber.svg" alt="Viber">
+        </a>
+    </div>
+
+</footer>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="../slick-1.8.1/slick/slick.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.carousel').slick({
+            autoplay: true,
+            accessibility: true,
+            arrows: true,
+
+        });
+    });
+</script>
+</body>
+
+</html>

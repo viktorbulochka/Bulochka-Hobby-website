@@ -1,22 +1,72 @@
-* {
-    box-sizing: border-box;
-    color: #23282B
+@media only screen and (max-width: 480px) {
+
+    .header_brand_link_text {
+        display: none;
+    }
+
+    .header_brand_link_pic {
+        margin-left: -1rem;
+    }
+
+    .header_nav_item {
+        margin-right: -1rem;
+        padding-right: -5px;
+    }
+
+    .header_nav_items {
+    }
+
+    .main_contacts_form_list_item_button  {
+        margin-left:0;
+    }
+
+    .header_brand_link_text {
+        display: none;
+    }
+
+    .header_brand_link_pic {
+        margin-left: -1.7rem;
+    }
+
+    .header_nav_item {
+        margin-right: -0.85rem;
+    }
 }
 
-body {
-    font-family: "Segoe Print" , sans-serif;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe Print", sans-serif;
+
+}
+
+html, body {
     background: url("images/wp3749524.jpg") no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    height: 100%;
 
 }
 
+.wrapper {
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
 main {
-    min-height: calc(100vh - 3.5rem - 8rem);
-    margin-top: 3.3rem;
+    padding-top:8vh;
+    flex: 1 0 auto;
+}
+
+@media only screen and (max-width: 480px) {
+   .header {
+       background: #a07a75;
+   }
 }
 
 .header {
@@ -26,35 +76,38 @@ main {
     left: 0;
     background: #dae7f0cc;
     padding: 0.5rem 2rem;
-    z-index: 60;
     display: flex;
-    align-items: center;
     letter-spacing: 2px;
     justify-content: space-between;
     box-shadow: 0 5px 7px -5px #201A19;
     text-shadow: 1px 1px 1px grey;
+
 }
 
 .header_brand_link {
     color: #201a19;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2rem;
-    height: 2.4rem;
 
 }
 
 .header_brand_link_text {
-    vertical-align: center;
+    vertical-align: sub;
     font-size: 1.3rem;
     font-style: oblique;
+    font-weight: bold;
     text-shadow: 1px 1px 1px grey;
+    webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 
 }
 
-.header_brand_link_pic{
+.header_brand_link_pic {
     width: 50px;
     vertical-align: middle;
+
 }
 
 
@@ -68,17 +121,23 @@ main {
     padding: 0;
     list-style: none;
     display: flex;
+    align-items: center;
+
 }
 
 .header_nav_item {
     margin: 0 1rem;
+    webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .header_nav_item_link {
     text-decoration: none;
     color: #201a19;
     font-weight: bold;
-    padding: 0.2rem 0;
 }
 
 .header_nav_item_link:hover,
@@ -87,35 +146,24 @@ main {
 }
 
 .footer {
+    padding-top: 0.5rem;
     background: #dae7f0cc;
-    padding: 0.8rem;
-    margin-top: 4.1rem;
+    flex: 0 0 auto;
     box-shadow: 0px -5px 7px -5px #201A19;
 
 }
 
 .footer_links {
+    justify-content: center;
     display: flex;
 }
 
 .footer_link {
-    padding-right: 30px;
+    margin:0 1.5rem 0 1.5rem;
 }
 
 .footer_link_pic {
     width: 40px;
-    vertical-align: bottom;
-
 }
 
 
-@media (min-width: 40rem) {
-    .footer_link {
-        margin: 0 0.5rem;
-    }
-
-    .footer_links {
-        flex-direction: row;
-        justify-content: center;
-    }
-}
