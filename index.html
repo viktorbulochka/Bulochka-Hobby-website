@@ -9,57 +9,97 @@
 </head>
 
 <body>
-
-<<header class="header">
-    <div class="header_brand">
-        <a href="index.html" class="header_brand_link">
-            <img class="header_brand_link_pic" src=images/svg/yarn-ball.svg alt="Logo">
-            <span class="header_brand_link_text">Olga Aferova</span>
-        </a>
-    </div>
-    <nav class="header_nav">
-        <ul class="header_nav_items">
-            <li class="header_nav_item">
-                <a  class="header_nav_item_link" href="portfolio/index.html">Мои работы</a>
-            </li>
-            <li class="header_nav_item">
-                <a class="header_nav_item_link" href="ordering/index.html">На заказ</a>
-            </li>
-            <li class="header_nav_item">
-                <a class="header_nav_item_link" href="contacts/index.html">Контакты</a>
-            </li>
-        </ul>
-    </nav>
-</header>
+<div class="wrapper">
+    <header class="header">
+        <div class="logo">
+            <a href="index.html" class="logo__link">
+                <img class="logo__pic" src=images/svg/yarn-ball.svg alt="Logo">
+                <span class="logo__text">Olga Aferova</span>
+            </a>
+        </div>
+        <nav class="header__nav">
+            <ul class="nav__items">
+                <li class="nav__item">
+                    <a class="nav__link" href="index.html">Главная</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="portfolio/index.html">Мои работы</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="ordering/index.html">На заказ</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="contacts/index.html">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <header class="header-mobile">
+        <div class="header-mobile__menu">
+            <p>Olga Aferova</p>
+            <a class="menu__trigger" href="#"></a>
+            <div class="menu__popup">
+                <a class="menu__close" href="#"></a>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="index.html#about">Обо мне</a></li>
+                    <li><a href="portfolio/index.html">Мои работы</a></li>
+                    <li><a href="ordering/index.html">На заказ</a></li>
+                    <li><a href="contacts/index.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
 <main class="main">
-    <div class="main_page">
-        <h2 class="main_page_header">Ольга Аферова</h2>
-        <p class="main_page_info">Хэндмейд Мастер</p>
-        <div class="ar"><a class="main_page_link" href="#about">Обо мне</a></div>
-        <div><img class="main_page_photo" src="images/M2gQOUCnf40.jpg"></div>
+    <h1 class="main__header">Главная страница</h1>
+    <div class="main__page">
+        <div class="page__block">
+        <h2 class="page__header">Ольга Аферова</h2>
+        <p class="page__info">Хэндмейд Мастер</p>
+        <div class="page__link"><a href="#about">Обо мне</a></div>
+        </div>
+        <div class="page__photo"><img src="images/zty0CAyDQCw.jpg" alt="Ольга Аферова"></div>
     </div>
-    <div class="main_about" id="about">
-
+    <div class="main__about" id="about">
+<h1 class="about__header">Обо мне</h1>
+        <section class="about__text"><h1>Всем привет! Меня зовут Ольга. Я хэндмейкер. Примерно 6 лет назад я увлеклась
+            скрапбукингом и начала делать открытки для друзей и родственников.</h1></section>
+<hr class="about__line">
+        <section class="about__text"><h1> Cпустя какое-то время я поняла, что
+            мои работы "своими руками" что-то большее, чем просто хобби.Сейчас я создаю не только открытки,
+            занимаюсь декупажем, делаю рождественские венки и поделки из дерева. </h1></section>
+        <hr class="about__line">
+        <section class="about__text"><h1>А также другие подарки на
+            различные праздники.  Я люблю свое дело и хочу поделиться некоторыми своими работами на моем сайте.
+            Добро пожаловать в мой творческий мир!</h1></section>
     </div>
-    <script src="main.js"></script>
 </main>
 
-<footer class="footer">
-    <div class="footer_links">
-        <a  class="footer_link" href="#">
-            <img  class="footer_link_pic" src="images/svg/instagram.svg" alt="Instagram">
-        </a>
+    <footer class="footer">
+        <div class="footer__links">
+            <a class="footer__link" href="#">
+                <img class="footer__pic" src="images/svg/instagram.svg" alt="Instagram">
+            </a>
 
-        <a class="footer_link" href="#">
-            <img class="footer_link_pic" src="images/svg/vk.svg" alt="Vk">
-        </a>
+            <a class="footer__link" href="#">
+                <img class="footer__pic" src="images/svg/vk.svg" alt="Vk">
+            </a>
 
-        <a class="footer_link" href="#">
-            <img class="footer_link_pic" src="images/svg/viber.svg" alt="Viber">
-        </a>
-    </div>
-</footer>
+            <a class="footer__link" href="#">
+                <img class="footer__pic" src="images/svg/viber.svg" alt="Viber">
+            </a>
+        </div>
+    </footer>
+</div>
+
+<a id="button"></a>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="../slick-1.8.1/slick/slick.min.js"></script>
+<script src="main.js"></script>
+
 </body>
 
 </html>

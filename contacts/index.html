@@ -7,95 +7,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../contacts/main.css">
     <link rel="stylesheet" type="text/css" href="../shared.css">
-    <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="handheld.css" />
 </head>
 
 <body>
-<header class="header">
-    <div class="header_brand">
-        <a href="../index.html" class="header_brand_link">
-            <img class="header_brand_link_pic" src=../images/svg/yarn-ball.svg alt="Logo">
-            <span class="header_brand_link_text">Olga Aferova</span>
-        </a>
-    </div>
-    <nav class="header_nav">
-        <ul class="header_nav_items">
-            <li class="header_nav_item">
-                <a  class="header_nav_item_link" href="../portfolio/index.html">Мои работы</a>
-            </li>
-            <li class="header_nav_item">
-                <a class="header_nav_item_link" href="../ordering/index.html">На заказ</a>
-            </li>
-            <li class="header_nav_item">
-                <a class="header_nav_item_link" href="../contacts/index.html">Контакты</a>
-            </li>
-        </ul>
-    </nav>
-</header>
-
-
 <div class="wrapper">
-<main class="main">
-    <h2 class="main_contacts_header">Мои контакты</h2>
-    <div class="main_contacts">
-        <ul class="main_contacts_card">
-            <img class="main_contacts_card_pic" src="../images/svg/name.svg" alt="name">
-            <li class="main_contacts_card_item">Аферова Ольга Аркадьевна</li>
-            <hr>
-            <img class="main_contacts_card_pic" src="../images/svg/smartphone-call.svg" alt="telephone">
-            <li class="main_contacts_card_item">+375293586362</li>
-            <hr>
-            <img class="main_contacts_card_pic" src="../images/svg/cityscape.svg" alt="city">
-            <li class="main_contacts_card_item">Беларусь, г. Солигорск</li>
-        </ul>
-        <form class="main_contacts_form" action="" method="post" name="contact-form">
-            <ul class="main_contacts_form_list">
-                <li class="main_contacts_form_list_item">
-                    <h2 class="main_contacts_form_list_item_header">Свяжитесь со мной</h2>
+    <header class="header">
+        <div class="logo">
+            <a href="../index.html" class="logo__link">
+                <img class="logo__pic" src=../images/svg/yarn-ball.svg alt="Logo">
+                <span class="logo__text">Olga Aferova</span>
+            </a>
+        </div>
+        <nav class="header__nav">
+            <ul class="nav__items">
+                <li class="nav__item">
+                    <a class="nav__link" href="../index.html">Главная</a>
                 </li>
-                <li class="main_contacts_form_list_item">
-                    <label class="main_contacts_form_list_item_label" for="name">Имя:</label>
-                    <input class="main_contacts_form_list_item_input" type="text" name="name" id="name"/>
+                <li class="nav__item">
+                    <a class="nav__link" href="../portfolio/index.html">Мои работы</a>
                 </li>
-                <li class="main_contacts_form_list_item">
-                    <label class="main_contacts_form_list_item_label" for="email">Email:</label>
-                    <input class="main_contacts_form_list_item_input" type="text" name="email" id="email"/>
+                <li class="nav__item">
+                    <a class="nav__link" href="../ordering/index.html">На заказ</a>
                 </li>
-                <li class="main_contacts_form_list_item">
-                    <label class="main_contacts_form_list_item_label" for="message">Предложения:</label>
-                    <textarea class="main_contacts_form_list_textarea" name="message" id="message" cols="40"
-                              rows="6"></textarea>
-                </li>
-                <li class="main_contacts_form_list_item">
-                    <button  type="button" data-modal="1" class="main_contacts_form_list_item_button">Отправить</button>
+                <li class="nav__item">
+                    <a class="nav__link" href="../contacts/index.html">Контакты</a>
                 </li>
             </ul>
-        </form>
-    </div>
-</main>
+        </nav>
+    </header>
+    <header class="header-mobile">
+        <div class="header-mobile__menu">
+            <p>Olga Aferova</p>
+            <a class="menu__trigger" href="#"></a>
+            <nav>
+            <div class="menu__popup">
+                <a class="menu__close" href="#"></a>
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="../index.html#about">Обо мне</a></li>
+                    <li><a href="../portfolio/index.html">Мои работы</a></li>
+                    <li><a href="../ordering/index.html">На заказ</a></li>
+                    <li><a href="../contacts/index.html">Контакты</a></li>
+                </ul>
+            </div>
+            </nav>
+        </div>
+    </header>
 
-<footer class="footer">
-    <div class="footer_links">
-        <a  class="footer_link" href="#">
-            <img  class="footer_link_pic" src="../images/svg/instagram.svg" alt="Instagram">
-        </a>
+    <main class="main">
+        <article>
+            <h2 class="main__header">Мои контакты</h2>
+            <div class="main__contacts">
+                <section>
+                    <ul class="contacts__card">
+                        <img class="contacts__pic" src="../images/svg/name.svg" alt="name">
+                        <li class="contacts__item">Аферова Ольга Аркадьевна</li>
+                        <hr class="contacts__line">
+                        <img class="contacts__pic" src="../images/svg/smartphone-call.svg" alt="telephone">
+                        <li class="contacts__item">+375293586362</li>
+                        <hr class="contacts__line">
+                        <img class="contacts__pic" src="../images/svg/cityscape.svg" alt="city">
+                        <li class="contacts__item">Беларусь, г. Солигорск</li>
+                    </ul>
+                </section>
+                <section>
+                    <form class="contacts__form" action="" method="post" name="contact-form">
+                        <ul class="contacts__list">
+                            <li class="contacts__item">
+                                <h2 class="contacts__header">Свяжитесь со мной</h2>
+                            </li>
+                            <li class="contacts__item">
+                                <label class="contacts__label" for="name">Имя:</label>
+                                <input class="contacts__input" type="text" name="name" id="name"/>
+                            </li>
+                            <li class="contacts__item">
+                                <label class="contacts__label" for="email">Email:</label>
+                                <input class="contacts__input" type="text" name="email" id="email"/>
+                            </li>
+                            <li class="contacts__item">
+                                <label class="contacts__label" for="message">Предложения:</label>
+                                <textarea class="contacts__textarea" name="message" id="message" cols="40"
+                                          rows="6"></textarea>
+                            </li>
+                            <li class="contacts__item">
+                                <button type="button" data-modal="1" class="contacts__button">Отправить</button>
+                            </li>
+                        </ul>
+                    </form>
+                </section>
+            </div>
+        </article>
+    </main>
 
-        <a class="footer_link" href="#">
-            <img class="footer_link_pic" src="../images/svg/vk.svg" alt="Vk">
-        </a>
+    <footer class="footer">
+        <nav>
+        <div class="footer__links">
+            <a class="footer__link" href="#">
+                <img class="footer__pic" src="../images/svg/instagram.svg" alt="Instagram">
+            </a>
 
-        <a class="footer_link" href="#">
-            <img class="footer_link_pic" src="../images/svg/viber.svg" alt="Viber">
-        </a>
-    </div>
-</footer>
+            <a class="footer__link" href="#">
+                <img class="footer__pic" src="../images/svg/vk.svg" alt="Vk">
+            </a>
+
+            <a class="footer__link" href="#">
+                <img class="footer__pic" src="../images/svg/viber.svg" alt="Viber">
+            </a>
+        </div>
+        </nav>
+    </footer>
 </div>
+
 <div class="modal" data-modal="1">
-    <!--   Svg иконка для закрытия окна  -->
-    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/>
+    </svg>
     <p class="modal__title">Спасибо за обратную связь!</p>
 </div>
-<div class="overlay js-overlay-modal"></div>
+<div class="overlay"></div>
+
+<a id="button"></a>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="main.js"></script>
 </body>
 </html>

@@ -1,222 +1,157 @@
-/* User styles */
-@media screen and (min-width: 911px) {
-    .ant-carousel {
-        max-width: 900px;
-    }
+.content {
+    z-index: 1;
+    flex: 1 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    outline: none;
 }
 
-@media screen and (min-width: 641px) and (max-width: 910px) {
-    .ant-carousel {
-        max-width: 600px;
-    }
+.slick-slide:active, .slick-slide:focus {
+    outline: none;
 }
 
-@media screen and (max-width: 640px) {
-    .ant-carousel {
-        max-width: 300px;
-    }
+.slider-for {
+    margin: 0 auto;
+    border-radius: 5px;
 }
 
-.portfolio_header {
-    padding-top: 3rem;
-    text-align: center;
-    letter-spacing: 0.3rem;
-    font-size: 2.5rem;
-}
-
-.wrp {
-    text-align: center;
-}
-
-.portfolio_smallHeader {
-    display: inline-block;
-    padding: 0.5rem 5rem;
-    font-weight: bold;
-    background:rgba(233, 241, 248, 0.8);
-    font-size: 1.2rem;
-    letter-spacing: 3px;
-    border-radius:1rem;
-    text-shadow: 1px 2px 2px grey;
-    border: 1px black solid;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.5), 0 10px 10px rgba(0,0,0,0.3);
-}
-
-
-.ant-carousel {
-    margin: 2rem auto 6rem auto;
-    padding-top: 1rem;
-    border: 1px solid #ccd;
-    background-color: rgba(233, 241, 248, 0.8);
-    box-shadow: 0 14px 28px rgba(0,0,0,0.5), 0 10px 10px rgba(0,0,0,0.3);
-
-
-
-}
-
-.ant-carousel-element {
-    width: 300px;
-    text-align: center;
-}
-
-/* General styles */
-.ant-carousel {
-    width: auto;
-    position: relative;
-}
-
-.ant-carousel-hider {
-    overflow: hidden;
-}
-
-.ant-carousel-list {
-    width: auto;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.ant-carousel-element {
-    display: block;
-    flex: 0 0 auto;
-}
-
-/* Navigation item styles */
-div.ant-carousel-arrow-left,
-div.ant-carousel-arrow-right {
-    width: 22px;
-    height: 40px;
-    position: absolute;
-    cursor: pointer;
-    opacity: 0.6;
-    z-index: 32;
-}
-
-div.ant-carousel-arrow-left {
-    left: -40px;
-    top: 40%;
-    display: block;
-    background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-left.png") no-repeat;
-}
-
-div.ant-carousel-arrow-right {
-    right: -40px;
-    top: 40%;
-    display: block;
-    background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-right.png") no-repeat;
-}
-
-div.ant-carousel-arrow-left:hover {
-    opacity: 1.0;
-}
-
-div.ant-carousel-arrow-right:hover {
-    opacity: 1.0;
-}
-
-div.ant-carousel-dots {
+.slider-nav {
+    margin-top: 1.5rem;
     width: 100%;
-    height: auto;
-    position: absolute;
-    left: 0;
-    bottom: -3rem;
-    z-index: 30;
+    overflow: hidden;
+    background: rgba(99, 113, 113, 0.38);
+    border: none;
+}
+
+.slider-nav .pic img {
+    height: 30vh;
+    width: 29vw;
+    margin: 2rem;
+}
+
+.pic img {
+    height: 50vh;
+}
+
+.content__header:first-child {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+.content__header {
     text-align: center;
+    padding-bottom: 2rem;
+    font-size: 2.2rem;
+    text-shadow: 1px 2px 2px grey;
+    letter-spacing: 0.5rem;
 
 }
 
-span.ant-dot {
-    width: 10px;
-    height: 10px;
-    margin: 5px 7px;
+.content__header:hover {
+    webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    color: whitesmoke;
+
+}
+
+.line {
+    margin: 25px 0 40px 0;
     padding: 0;
+    height: 0;
+    border: none;
+    border-top: 3px solid #aac3ef;
+    box-shadow: 1px 4px 2px #0c0c0c;
+}
+
+.even {
+    transform: rotate(-2deg);
+}
+
+.odd {
+    transform: rotate(2deg);
+}
+
+/*/combining css/*/
+.slider-for, .slider-nav, .slider-nav .pic img {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.5), 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.slider-for, .pic img {
+    width: 50vw;
+}
+
+.content__header:nth-of-type(2), .content__header:nth-of-type(3) {
+    padding-top: 2rem;
+}
+
+/*/combining css/*/
+
+/*/button/*/
+#button {
     display: inline-block;
-    background-color: #BBB;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-
-
-
-
-/* Style the Image Used to Trigger the Modal */
-#myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#myImg:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (Image) */
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
+    background-color: rgb(101, 162, 189);
+    width: 50px;
+    height: 50px;
     text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    transition: background-color .3s,
+    opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
 }
 
-/* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
-    animation-name: zoom;
-    animation-duration: 0.6s;
+#button::after {
+    content: " \2191";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
 }
 
-@keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
+#button:hover {
     cursor: pointer;
+    background-color: #333;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
+#button:active {
+    background-color: #555;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*/button/*/
+@media only screen and (max-width: 480px) {
+    .pic img {
+        width: 80vw;
+        height: 35vh;
+    }
+
+    .slider-for {
+        width: 80vw;
+    }
+
+    .slider-nav {
+        display: none;
+    }
+
+    .slider-nav .pic img {
+        display: none;
+    }
+
+    .content__header:first-child {
+        margin-top: 1rem;
     }
 }
+/*/button/*/
