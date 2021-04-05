@@ -1,0 +1,185 @@
+/*/main/*/
+.main {
+    backdrop-filter: blur(2px);
+    overflow-x: hidden;
+}
+
+.main__header {
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 0.7rem;
+    margin-bottom: 3.5rem;
+    margin-top: 2.5rem;
+}
+
+.main__page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.page__block {
+    margin-top: 8rem;
+}
+
+.page__photo img {
+    width: 50vh;
+    border-radius: 10px;
+}
+
+.page__header {
+    font-size: 3rem;
+}
+
+.page__info {
+    padding-top: 0.5rem;
+    font-size: 1.5rem;
+    padding-bottom: 8rem;
+}
+
+
+.page__link a {
+    margin-top: 1rem;
+    padding: 0.4rem 4rem;
+    background: rgba(233, 241, 248, 0.9);
+    border-radius: 0.5rem;
+    font-weight: bold;
+    border: 1px black solid;
+    text-decoration: none;
+    color: #000a12;
+}
+
+.main__about {
+    width: 100%;
+    text-align: center;
+    margin-top: -10rem;
+}
+
+.about__header {
+    margin-top: 4rem;
+    font-size: 2.5rem;
+}
+
+.about__text {
+    background-color: #dae7f0cc;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    margin: 5rem 0;
+    border-radius: 0;
+    transform: translateX(400%);
+    transition: transform 1.2s ease;
+    font-size: 1rem;
+}
+
+.about__text:nth-of-type(even) {
+    transform: translateX(-400%);
+}
+
+.about__text.show {
+    transform: translateX(0);
+}
+
+.about__text h1 {
+    padding: 0 2rem 0 2rem;
+    color: black;
+}
+
+.about__line {
+    margin: -30px auto 10px;
+    padding: 0;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 20px 20px -20px #333;
+    width: 95%;
+}
+/*/main/*/
+
+/*/combining css/*/
+.main__header:hover,.page__header:hover,.page__info:hover,.about__header:hover   {
+    color: rgba(250, 248, 248, 0.8);
+    webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.page__photo img,.page__link a,.about__text  {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.5), 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about__text,.page__info {
+    text-shadow: 1px 2px 2px grey;
+}
+
+.page__link a,.about__text h1  {
+    font-size: 1.2rem;
+}
+/*/combining css/*/
+
+/*/handheld/*/
+@media (max-width: 480px) {
+    .main__header {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        font-size: 2.5rem;
+        letter-spacing: 0.7rem;
+        text-shadow: 1px 2px 2px grey;
+    }
+
+    .main {
+        padding-top: 0;
+    }
+
+    .main__page {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+
+    .page__photo img {
+        height: 50vh;
+        width: 75vw;
+    }
+
+    .page__header {
+        text-align: center;
+        margin-top: -8rem;
+    }
+
+    .page__info {
+        text-align: center;
+        padding-bottom: 4rem;
+    }
+
+    .main__about {
+        margin-top: 0;
+    }
+
+    .page__link {
+        display: none;
+
+    }
+
+    .about__text h1 {
+        font-size: 1rem;
+        padding: 0 1rem 0 1rem;
+    }
+
+    .about__header {
+        margin-bottom: -2rem;
+        margin-top: 0;
+    }
+}
+/*/handheld/*/
+
+
+

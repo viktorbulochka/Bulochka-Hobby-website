@@ -1,3 +1,4 @@
+/*/main/*/
 .main__order {
     display: block;
     width: 100%;
@@ -74,6 +75,7 @@
     font-size: 1.2rem;
     color: #356490;
 }
+/*/main/*/
 
 /*/combining css/*/
 .order__header:hover,.order__itemHeader:hover, .order__linkItem:hover {
@@ -103,46 +105,7 @@
 }
 /*/combining css/*/
 
-/*/button/*/
-#button {
-    display: inline-block;
-    background-color: rgb(101, 162, 189);
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    border-radius: 4px;
-    position: fixed;
-    bottom: 80px;
-    right: 30px;
-    transition: background-color .3s,
-    opacity .5s, visibility .5s;
-    opacity: 0;
-    visibility: hidden;
-    z-index: 1000;
-}
-#button::after {
-    content: " \2191";
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 2em;
-    line-height: 50px;
-    color: #fff;
-}
-#button:hover {
-    cursor: pointer;
-    background-color: #333;
-}
-#button:active {
-    background-color: #555;
-}
-#button.show {
-    opacity: 1;
-    visibility: visible;
-}
-/*/button/*/
-
-
+/*/handheld/*/
 @media (max-width: 480px) {
 
     .odd > .order__pic,  .even > .order__pic {
@@ -159,3 +122,4 @@
         font-size: 1rem;
     }
 }
+/*/handheld/*/

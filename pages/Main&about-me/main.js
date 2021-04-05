@@ -1,3 +1,4 @@
+//smooth down-btn//
 const anchors = document.querySelectorAll('a[href*="#"]')
 
 for (let anchor of anchors) {
@@ -12,7 +13,9 @@ for (let anchor of anchors) {
         })
     })
 }
+//smooth down-btn//
 
+//pop-up boxes//
 const boxes = document.querySelectorAll('.about__text')
 
 window.addEventListener('scroll', checkBoxes)
@@ -32,20 +35,5 @@ function checkBoxes() {
         }
     })
 }
-
-var btn = $('#button');
-
-$(window).scroll(function() {
-    if ($(window).scrollTop() > 300) {
-        btn.addClass('show');
-    } else {
-        btn.removeClass('show');
-    }
-});
-
-btn.on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({scrollTop:0}, '300');
-});
-
+//pop-up boxes//
 
